@@ -280,6 +280,7 @@ class _FlutterTaggingState<T extends Taggable>
               setState(() {});
               widget.onChanged?.call();
               _textController.clear();
+              _focusNode.requestFocus();
             }
           },
         ),
